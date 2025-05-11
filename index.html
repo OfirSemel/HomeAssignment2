@@ -4,10 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="global.css" />
+  <script src="global.js"></script>
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav id="nav">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="column-left">
+        <h1>Ofir</h1>
+        <h2>Full Stack Developer</h2>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+      <img src="assets/your-image.jpg" alt="תמונה שלך" class="hero-image" />
+
+      <div class="contact-links">
+        <a href="ofirsemel@gmail.com">Email</a>
+        <a href="0545661182">Phone</a>
+        <a href="https://www.linkedin.com/in/ofirsemel/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="column right">
+      <img src="images/profile.jpg" alt="Profile picture" />
+      <p>This is a short description of my portfolio and what you’ll find here.</p>
+    </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>
+      © 2025 Ofir Semel. All rights reserved.
+    </p>
+  </footer>
+
 </body>
 </html>
