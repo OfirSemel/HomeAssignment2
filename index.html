@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+<script defer src="services/home.js"></script>
 <script defer src="services/global.js"></script>
 <link rel="stylesheet" href="assets/style/global.css" />
 <!-- type=“text/css”  -->
 <link rel="stylesheet" href="assets/style/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -25,13 +28,12 @@
       </div>
 
     <nav id="nav">
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-      
+      <div class="hamburger" onclick="toggleMenu()"></div>      
     </nav>
   </header>
 
   <main>
-
+    <section>
     <div class="pic1">
       <img src="assets/imgs/PersonalPic2.png" alt="Ofir Semel Picture" />
     </div>
@@ -58,6 +60,30 @@
       </h3>
     </div>
 
+    <a href="assets/Resume.PDF.pdf" class="btn" download>Download Resume</a>
+
+  </section>
+   
+<section class="call-to-action">
+  <div class="cta-column">
+    <h3>Contact Me</h3>
+    <ul class="contact-icons">
+      <li><a href="mailto:ofirsemel@gmail.com"> Email</a></li>
+      <li><a href="tel:0545661182">📱 Phone</a></li>
+      <li><a href="https://www.linkedin.com/in/ofirsemel/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-column">
+    <h3>Featured Project</h3>
+    <img src="assets/imgs/project-thumbnail.jpg" alt="Calculator Project Preview" class="project-thumb">
+    <p class="project-description">A responsive calculator built with HTML, CSS, and JavaScript.</p>
+    <a href="project-calculator.html" class="btn">View Project</a>
+  </div>
+</section>
+
+
+    
     <!-- <section class="hero">
       <div class="column-left">
         <h1>Ofir</h1>
@@ -79,7 +105,7 @@
     </section> -->
   </main>
 
-  <footer id="footer">
+  <footer>
     <p>
       © 2025 Ofir Semel. All rights reserved.
     </p>

@@ -7,10 +7,29 @@
 
 body{
     background-color: black;
+    color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
+body {
+    padding-top: 100px; /* חשוב כדי שה־main לא יתחבא מאחורי ההדר */
+}
+
 
 .container{
     padding: 10px;
+    
 }
 
 nav{
@@ -30,25 +49,130 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin-right: 100px;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     position: relative;
 }
 
 
 
+/* mobile */
+/* .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+} */
+
+/* @media (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 15px;
+    }
+} */
+
+/* mobile */
 
 
-.footer{
+
+/* נייד */
+@media (max-width: 767px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      width: 100%;
+    }
+  
+    nav ul.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  
+  /* טאבלט */
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* לפטופ */
+  @media (min-width: 992px) {
+    nav ul li a {
+      font-size: 20px;
+    }
+  }
+  
+  /* מחשב נייח */
+  @media (min-width: 1200px) {
+    nav {
+      padding: 0 80px;
+    }
+  }
+  
+
+footer {
     height: 100px;
-    background-color: black;    
+    background-color: black;
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+
+@media (max-width: 767px) {
+    .call-to-action {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cta-column {
+      max-width: 90%;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

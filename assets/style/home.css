@@ -10,14 +10,14 @@
 
 .pic1{
     height: 100px;
-    width: 50%;
+    width: 40%;
     display: flex;
     background-image: url(assets/img/personalPic.jpg);
     flex-direction: column;
     justify-content: right;
     align-items: right;
     margin-top: 100px;
-    margin-left: 1100px;
+    margin-left: 1600px;
 }
 
 .text{
@@ -26,3 +26,64 @@
     margin-left: 130px;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 120px;
+    padding: 10px 20px;
+    background-color: #ff66c4;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #d5108a;
+  }
+
+
+
+  .call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 60px auto;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .cta-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  .contact-icons li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .contact-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .project-thumb {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  

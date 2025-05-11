@@ -5,9 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Quote Calculator</title>
   <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <script defer src="services/home.js"></script>
+<script defer src="services/global.js"></script>
 </head>
 <body>
-  <header></header>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="assets/imgs/Logo.png" alt="ofir semel's logo" class="logo" />
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <nav id="nav">
+    <div class="hamburger" onclick="toggleMenu()"></div>      
+  </nav>
+</header>
   <main></main>
   <footer></footer>
 </body>
