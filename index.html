@@ -4,30 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="global.css" />
-  <script src="global.js"></script>
+<script defer src="services/global.js"></script>
+<link rel="stylesheet" href="assets/style/global.css" />
+<!-- type=“text/css”  -->
+<link rel="stylesheet" href="assets/style/home.css">
 </head>
 
 <body>
-  <header>
+  <header id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/imgs/Logo.png" alt="ofir semel's logo" class="logo" />
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project-calculator.html">Project Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+
     <nav id="nav">
       <div class="hamburger" onclick="toggleMenu()">☰</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project-calculator.html">Project Calculator</a></li>
-      </ul>
+      
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+
+    <div class="pic1">
+      <img src="assets/imgs/PersonalPic2.png" alt="Ofir Semel Picture" />
+    </div>
+
+    <div class="text">
+      <h1>Ofir Semel</h1>
+      <h3>
+        Hi! 
+        <br>
+        I'm a Full Stack Developer with a passion for creating
+        <br>
+        dynamic and responsive web applications.
+        <br>
+        I have experience in various technologies and frameworks,
+        <br>
+        and I'm always eager to learn more. 
+        <br>
+        In my portfolio, you'll find a selection of my projects that
+        <br>
+        showcase my skills and creativity. Feel free to explore and 
+        <br>
+        reach out if you have any questions or opportunities!
+        
+      </h3>
+    </div>
+
+    <!-- <section class="hero">
       <div class="column-left">
         <h1>Ofir</h1>
         <h2>Full Stack Developer</h2>
-        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
-      <img src="assets/your-image.jpg" alt="תמונה שלך" class="hero-image" />
+        <a href="assets/Resume.PDF.pdf" class="btn" download>Download Resume</a>
+      <img src="assets/imgs/PersonalPic2.jpg.png" alt="my picture" class="hero-image" />
 
       <div class="contact-links">
         <a href="ofirsemel@gmail.com">Email</a>
@@ -40,7 +76,7 @@
       <img src="images/profile.jpg" alt="Profile picture" />
       <p>This is a short description of my portfolio and what you’ll find here.</p>
     </div>
-    </section>
+    </section> -->
   </main>
 
   <footer id="footer">

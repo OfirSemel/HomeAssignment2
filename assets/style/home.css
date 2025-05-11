@@ -1,0 +1,28 @@
+/* .hero-image{
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    background-image: url(assets/img/personalPic.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+.pic1{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    background-image: url(assets/img/personalPic.jpg);
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    margin-top: 100px;
+    margin-left: 1100px;
+}
+
+.text{
+    color: white;
+    font-size: 30px;
+    margin-left: 130px;
+}
+
