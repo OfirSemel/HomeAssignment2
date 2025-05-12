@@ -1,0 +1,68 @@
+/* #skills{
+padding: 30px 0;
+}
+
+.skills-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+} */
+
+
+#skills {
+    padding: 100px 0;
+    background-color: #0d0d0d; /* רקע כהה כמו בתמונה */
+    text-align: center;
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-list div {
+    background: #1a1a1a;
+    padding: 100px;
+    border-radius: 15px;
+    font-size: 60px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transition: background 0.5s, transform 0.3s;
+    color: #ffffff; 
+  }
+  
+  .skills-list div:hover {
+    background: #ff66c4; 
+    transform: translateY(-10px);
+    color: #1a1a1a; 
+  }
+  
+  
+  
+  
+  .skills-list h2 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list p {
+    font-size: 25px;
+    color: #cccccc;
+    line-height: 1.6;
+  }
+  
+  .skills-list div:hover  {
+    color: #ff66c4;
+    transform: translateY(-10px);
+  }
