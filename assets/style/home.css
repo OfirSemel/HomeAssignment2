@@ -1,98 +1,10 @@
-/* .hero-image{
-    height: 100px;
-    width: 100%;
-    color: white;
-    display: flex;
-    background-image: url(assets/img/personalPic.jpg);
-    background-size: cover;
-    background-position: center;
-} */
-
-/* .pic1{
-    height: 100px;
-    width: 40%;
-    display: flex;
-    background-image: url(assets/img/personalPic.jpg);
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
-    margin-top: 100px;
-    margin-left: 1600px;
+body {
+  margin: 0;
+  padding: 0;
+  
 }
 
-.text{
-    color: white;
-    font-size: 30px;
-    margin-left: 130px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 120px;
-    padding: 10px 20px;
-    background-color: #ff66c4;
-    
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #d5108a;
-  }
-
-
-
-  .call-to-action {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 60px auto;
-    padding: 20px;
-    color: white;
-    flex-wrap: wrap;
-  }
-  
-  .cta-column {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    margin: 20px;
-  }
-  
-  .contact-icons li {
-    list-style: none;
-    margin: 10px 0;
-  }
-  
-  .contact-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .project-thumb {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-  }
-  
-  .project-description {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-   */
-
-
-   /* Hero Section */
 .hero {
-  background-color: #0d0d0d;
-  color: white;
   padding: 80px 20px;
 }
 
@@ -100,41 +12,45 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  max-width: 1200px;
+  justify-content: space-between;
+  max-width: 2000px;
   margin: 0 auto;
-  gap: 40px;
-}
-
-.hero-image {
-  width: 300px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(255, 102, 196, 0.3);
+  gap: 90px;
+  margin-top: 200px;
+ 
 }
 
 .hero-text {
-  max-width: 600px;
-  font-size: 18px;
+  max-width: 800px;
+  font-size: 50px;
+  color: #ffffff; 
 }
 
+.hero-description {
+  text-align: justify;
+}
+
+
 .hero-text h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
+  font-size: 80px;
+  color: #ff66c4;
 }
 
 .hero-text p {
+  font-size: 35px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px;
   background-color: #ff66c4;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 8px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -142,14 +58,21 @@
   background-color: #d5108a;
 }
 
-/* Call to Action Section */
+.hero-image {
+  width: 800px;
+  margin-left: 100px;
+ 
+}
+
 .call-to-action {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 60px 20px;
-  background-color: #1a1a1a;
-  color: white;
+  color: whitesmoke;
+  border-top: 2px solid #ff66c4;
+  border-bottom: 2px solid #ff66c4;
+  margin-top: 40px;
 }
 
 .cta-column {
@@ -157,6 +80,7 @@
   min-width: 280px;
   max-width: 480px;
   margin: 20px;
+  font-size: 35px;
 }
 
 .contact-icons li {
@@ -167,23 +91,24 @@
 .contact-icons i {
   margin-right: 8px;
   color: #ff66c4;
+  font-size: 30px;
 }
 
 .contact-icons a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .project-thumb {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 10px;
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -194,8 +119,9 @@
     text-align: center;
   }
 
-  .hero-text {
-    padding: 0 10px;
+  .hero-image {
+    width: 80%;
+    margin-top: 20px;
   }
 
   .call-to-action {
