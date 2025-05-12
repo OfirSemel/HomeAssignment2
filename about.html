@@ -12,92 +12,128 @@
   </head>
   <body>
     <div class="wrapper">
-    <header id="header">
-      <div class="container">
-        <nav>
-          <img
-            src="assets/imgs/Logo.png"
-            alt="ofir semel's logo"
-            class="logo"
-          />
-          <ul class="nav-links active">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="project-calculator.html">Project Calculator</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <nav id="nav">
-        <div class="hamburger" onclick="toggleMenu()"></div>
-      </nav>
-    </header>
-
-    <main>
-      <div id="about">
+      <header id="header">
         <div class="container">
-          <div class="row">
-            <div class="about-col-1">
-              <img src="assets/imgs/PersonalPic.jpg" alt="Ofir Semel Picture" />
+          <nav>
+            <img
+              src="assets/imgs/Logo.png"
+              alt="ofir semel's logo"
+              class="logo"
+            />
+            <ul class="nav-links active">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="project-calculator.html">Project Calculator</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav id="nav">
+          <div class="hamburger" onclick="toggleMenu()"></div>
+        </nav>
+      </header>
+
+      <main>
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img
+                  src="assets/imgs/PersonalPic.jpg"
+                  alt="Ofir Semel Picture"
+                />
+              </div>
+              <div class="about-col-2">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-text">
+                  I’m a passionate Full Stack Developer with experience in
+                  building web applications from scratch. I enjoy learning new
+                  technologies, solving real-world problems with code, and
+                  constantly improving my skills through projects and teamwork.
+                </p>
+                <div class="tab-title">
+                  <p
+                    class="tab-links active-link"
+                    onclick="opentab('education')"
+                  >
+                    Education
+                  </p>
+                  <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                  <p class="tab-links" onclick="opentab('values')">Values</p>
+                </div>
+                <div class="tab-content active-tab" id="education">
+                  <ul>
+                    <li>
+                      <span>BA degree</span><br />Business and Information
+                      Systems.
+                    </li>
+                    <li>
+                      <span>Equestrian sports center</span><br />Instructor
+                      training course <br />
+                      specializing in horse riding instructors.
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="hobbies">
+                  <ul>
+                    <li>
+                      <span>Horse Riding</span><br />Love to ride my horse Hofy
+                      and spend time with him.
+                    </li>
+                    <li>
+                      <span>Reading</span><br />Reading books is my latest
+                      hooby!<br />
+                      Mainly about technology and self-improvement.
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="values">
+                  <ul>
+                    <li>
+                      <span>Integrity</span><br />
+                      I believe in honesty and transparency in all my
+                      professional and personal interactions.
+                    </li>
+                    <li>
+                      <span>Growth Mindset</span><br />
+                      I see challenges not as obstacles, but as stepping stones
+                      to growth <br />
+                      each one pushing me to discover more and never give up.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="about-col-2">
-              <h1 class="about-title">About Me</h1>
-              <p class="about-text">
-                I’m a passionate Full Stack Developer with experience in
-                building web applications from scratch. I enjoy learning new
-                technologies, solving real-world problems with code, and
-                constantly improving my skills through projects and teamwork.
-              </p>
-              <div class="tab-title">
-                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                <p class="tab-links" onclick="opentab('values')">Values</p>
-              </div>
-              <div class="tab-content active-tab" id="education">
-                <ul>
-                  <li>
-                    <span>BA degree</span><br />Business and Information Systems.
-                  </li>
-                  <li>
-                    <span>Equestrian sports center</span><br />Instructor training course <br> specializing in horse riding instructors.
 
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-content" id="hobbies">
-                <ul>
-                  <li>
-                    <span>Horse Riding</span><br />Love to ride my horse Hofy and spend time with him.
-                  </li>
-                  <li>
-                    <span>Reading</span><br />Reading books is my latest hooby!<br> Mainly about technology and self-improvement.
-
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-content" id="values">
-                <ul>
-                  <li>
-                    <span>Integrity</span><br /> I believe in honesty and transparency in all my professional and personal interactions.
-                  </li>
-                  <li>
-                    <span>Growth Mindset</span><br /> I see challenges not as obstacles, but as stepping stones to growth <br> each one pushing me to discover more and never give up.
-
-
-                  </li>
-                </ul>
+            <div class="hofy-section">
+              <h2 class="hofy-title">Hofy</h2>
+              <div class="hofy-gallery">
+                <div class="hofy-card">
+                  <img src="assets/imgs/Hofy.jpg" alt="Hofy chilling" />
+                  <h3>Hofy & Me</h3>
+                  <p>Spending time together at the ranch — always brings me peace.</p>
+                </div>
+                <div class="hofy-card">
+                  <img src="assets/imgs/Hofy2.jpg" alt="Hofy riding" />
+                  <h3>Riding Time</h3>
+                  <p>Training and riding through the trails with Hofy — freedom at its best.</p>
+                </div>
+                <div class="hofy-card">
+                  <img src="assets/imgs/Hofy3.jpg" alt="Hofy playing" />
+                  <h3>Playful Moments</h3>
+                  <p>Hofy loves to play — whether it's in the field or with his favorite snacks!</p>
+                </div>
               </div>
             </div>
+            
+
           </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <p>
-        © 2025 Ofir Semel. All rights reserved.
-      </p>
-    </footer>
-  </div>
+      </main>
+      <footer>
+        <p>© 2025 Ofir Semel. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
