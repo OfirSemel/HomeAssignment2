@@ -57,10 +57,9 @@ body {
 }
 
 
-.container{
-    padding: 10px;
-    
-}
+/* .container{
+    margin-bottom: 5px;
+} */
 
 nav{
     height: 100px;
@@ -71,7 +70,10 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     
+}
 
+#nav{
+  padding-bottom: 50px;
 }
 
 .logo{
