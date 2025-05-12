@@ -7,7 +7,7 @@
   
   .sub-title {
     font-size: 60px;
-    color: #ffffff;
+    color: #f6e5e5;;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -27,7 +27,7 @@
     font-size: 60px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     transition: background 0.5s, transform 0.3s;
-    color: #ffffff; 
+    color: #f6e5e5;; 
   }
   
   .skills-list div:hover {
@@ -41,13 +41,13 @@
   
   .skills-list h2 {
     font-size: 40px;
-    color: #ffffff;
+    color: #f6e5e5;;
     margin-bottom: 20px;
   }
   
   .skills-list p {
     font-size: 25px;
-    color: #cccccc;
+    color: #f6e5e5;;
     line-height: 1.6;
     
   }
