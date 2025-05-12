@@ -20,3 +20,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.getElementsByClassName("nav-links")[0].getElementsByTagName("a");
+    const currentPage = window.location.pathname.split("/").pop();
+  
+    for (let i = 0; i < navLinks.length; i++) {
+      const link = navLinks[i];
+      const linkPage = link.getAttribute("href");
+  
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    }
+  });
+  

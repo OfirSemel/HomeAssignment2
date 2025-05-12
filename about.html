@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="assets/style/global.css" />
-  <link rel="stylesheet" href="assets/style/about.css">
-  <script defer src="services/home.js"></script>
-<script defer src="services/global.js"></script>
-</head>
-<body>
-  <header id="header">
-    <div class="container">
-      <nav>
-        <img src="assets/imgs/Logo.png" alt="ofir semel's logo" class="logo" />
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="project-calculator.html">Project Calculator</a></li>
-        </ul>
-      </nav>
-    </div>
-
-  <nav id="nav">
-    <div class="hamburger" onclick="toggleMenu()"></div>      
-  </nav>
-</header>
-
-  <main>
-    <div id="about">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/style/global.css" />
+    <link rel="stylesheet" href="assets/style/about.css" />
+    <script defer src="services/home.js"></script>
+    <script defer src="services/global.js"></script>
+    <script defer src="services/about.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header id="header">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="assets/imgs/PersonalPic.jpg" alt="Ofir Semel Picture" />
+        <nav>
+          <img
+            src="assets/imgs/Logo.png"
+            alt="ofir semel's logo"
+            class="logo"
+          />
+          <ul class="nav-links active">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project-calculator.html">Project Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav id="nav">
+        <div class="hamburger" onclick="toggleMenu()"></div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="assets/imgs/PersonalPic.jpg" alt="Ofir Semel Picture" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="about-title">About Me</h1>
+              <p class="about-text">
+                I’m a passionate Full Stack Developer with experience in
+                building web applications from scratch. I enjoy learning new
+                technologies, solving real-world problems with code, and
+                constantly improving my skills through projects and teamwork.
+              </p>
+              <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                <p class="tab-links" onclick="opentab('values')">Values</p>
+              </div>
+              <div class="tab-content active-tab" id="education">
+                <ul>
+                  <li>
+                    <span>BA degree</span><br />Business and Information Systems.
+                  </li>
+                  <li>
+                    <span>Equestrian sports center</span><br />Instructor training course <br> specializing in horse riding instructors.
+
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="hobbies">
+                <ul>
+                  <li>
+                    <span>Horse Riding</span><br />Love to ride my horse Hofy and spend time with him.
+                  </li>
+                  <li>
+                    <span>Reading</span><br />Reading books is my latest hooby!<br> Mainly about technology and self-improvement.
+
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="values">
+                <ul>
+                  <li>
+                    <span>Integrity</span><br /> I believe in honesty and transparency in all my professional and personal interactions.
+                  </li>
+                  <li>
+                    <span>Growth Mindset</span><br /> I see challenges not as obstacles, but as stepping stones to growth <br> each one pushing me to discover more and never give up.
+
+
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1 class="about-title">About Me</h1>
-            <p>
-              I’m a passionate Full Stack Developer with experience in building web applications 
-              from scratch. I enjoy learning new technologies, solving real-world problems with 
-              code, and constantly improving my skills through projects and teamwork.
-            </p>
-            <div class="tab-title">
-              <p class="tab-links">Education</p>
-              <p class="tab-links">Hobbies</p>
-              <p class="tab-links">Values</p>
-            </div>
-            <div class="tab-content">
-              <ul>
-                <li><span>BA degree</span><br>Business and Information Systems</li>
-              </ul>
-            </div>
-
-
-          </div>          
         </div>
       </div>
-    </div>
-
-
-  </main>
-  <footer></footer>
-</body>
+    </main>
+    <footer>
+      <p>
+        © 2025 Ofir Semel. All rights reserved.
+      </p>
+    </footer>
+  </div>
+  </body>
 </html>
