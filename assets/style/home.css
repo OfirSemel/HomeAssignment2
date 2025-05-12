@@ -8,7 +8,7 @@
     background-position: center;
 } */
 
-.pic1{
+/* .pic1{
     height: 100px;
     width: 40%;
     display: flex;
@@ -86,4 +86,125 @@
     margin-bottom: 10px;
   }
   
-  
+   */
+
+
+   /* Hero Section */
+.hero {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.hero-image {
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 102, 196, 0.3);
+}
+
+.hero-text {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff66c4;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d5108a;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.cta-column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+  margin: 20px;
+}
+
+.contact-icons li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-icons i {
+  margin-right: 8px;
+  color: #ff66c4;
+}
+
+.contact-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.project-thumb {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 0 10px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-column {
+    max-width: 90%;
+    text-align: center;
+  }
+}
