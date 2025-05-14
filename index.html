@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-<script defer src="services/home.js"></script>
-<script defer src="services/global.js"></script>
-<link rel="stylesheet" href="assets/style/global.css" />
-<!-- type=“text/css”  -->
-<link rel="stylesheet" href="assets/style/home.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script defer src="services/home.js"></script>
+    <script defer src="services/global.js"></script>
+    <link rel="stylesheet" href="assets/style/global.css" />
+    <!-- type=“text/css”  -->
+    <link rel="stylesheet" href="assets/style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-  <div class="wrapper">
-  <header id="header">
+  <body>
+    <div class="wrapper">
+      <!-- <header id="header">
       <div class="container">
         <nav>
           <img src="assets/imgs/logo.png" alt="ofir semel's logo" class="logo" />
@@ -31,47 +33,107 @@
     <nav id="nav">
       <div class="hamburger" onclick="toggleMenu()"></div>      
     </nav>
-  </header>
+  </header> -->
 
-  <main>
+      <header id="header">
+        <div class="container">
+          <nav class="main-nav">
+            <img
+              src="assets/imgs/logo.png"
+              alt="Ofir Semel's Logo"
+              class="logo"
+            />
 
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Ofir Semel</h1>
-          <p class="hero-description">
-            I'm a motivated Full Stack Developer with a unique blend of tech skills and a sharp business mindset.
-            I enjoy learning new technologies, working on meaningful projects, and creating user-friendly digital experiences.<br />
-            I'm driven by curiosity, inspired by impact, and always looking for the next challenge to grow and build something great.
-          </p>
-          <a href="assets/Resume.pdf" class="btn" download>Download Resume</a>
+            
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="project-calculator.html" id="projCal">Project Calculator</a></li>
+            </ul>
+
+           
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
         </div>
-        <img src="assets/imgs/PersonalPic2.png" alt="Ofir Semel Picture" class="hero-image" />
-      </div>
-    </section>
-    
-    <section class="call-to-action">
-      <div class="cta-column">
-        <h3>Contact Me</h3>
-        <ul class="contact-icons">
-          <li><i class="fas fa-envelope"></i> <a href="mailto:semelofir@gmail.com" >semelofir@gmail.com</a></li>
-          <li><i class="fas fa-phone"></i> <a href="tel:0545661182">054-566-1182</a></li>
-          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ofirsemel/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
-    
-      <div class="cta-column">
-        <h3>Featured Project</h3>
-        <a href="https://ofirsemel.github.io/tarBait-1/PolarBear.html" target="_blank">
-          <img src="assets/imgs/polarBear.png" alt="Project Preview" class="project-thumb">
-        </a>
-        <p class="project-description">A responsive Polar Bear website built with HTML, CSS, and bootstrap.</p>
-        <a href="https://ofirsemel.github.io/tarBait-1/PolarBear.html" target="_blank" class="btn">View Project</a>
-      </div>
-    </section>
-    
+      </header>
 
-<!--     
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Ofir Semel</h1>
+              <p class="hero-description">
+                I'm a motivated Full Stack Developer with a unique blend of tech
+                skills and a sharp business mindset. I enjoy learning new
+                technologies, working on meaningful projects, and creating
+                user-friendly digital experiences.<br />
+                I'm driven by curiosity, inspired by impact, and always looking
+                for the next challenge to grow and build something great.
+              </p>
+              <a href="assets/Resume.pdf" class="btn" download
+                >Download Resume</a
+              >
+            </div>
+            <img
+              src="assets/imgs/PersonalPic2.png"
+              alt="Ofir Semel Picture"
+              class="hero-image"
+            />
+          </div>
+        </section>
+
+        <section class="call-to-action">
+          <div class="cta-column">
+            <h3>Contact Me</h3>
+            <ul class="contact-icons">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:semelofir@gmail.com">semelofir@gmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:0545661182">054-566-1182</a>
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/ofirsemel/" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta-column">
+            <h3>Featured Project</h3>
+            <a
+              href="https://ofirsemel.github.io/tarBait-1/PolarBear.html"
+              target="_blank"
+            >
+              <img
+                src="assets/imgs/polarBear.png"
+                alt="Project Preview"
+                class="project-thumb"
+              />
+            </a>
+            <p class="project-description">
+              A responsive Polar Bear website built with HTML, CSS, and
+              bootstrap.
+            </p>
+            <a
+              href="https://ofirsemel.github.io/tarBait-1/PolarBear.html"
+              target="_blank"
+              class="btn"
+              >View Project</a
+            >
+          </div>
+        </section>
+
+        <!--     
     <section>
     <div class="pic1">
       <img src="assets/imgs/PersonalPic2.png" alt="Ofir Semel Picture" />
@@ -122,8 +184,7 @@
 </section>
  -->
 
-    
-    <!-- <section class="hero">
+        <!-- <section class="hero">
       <div class="column-left">
         <h1>Ofir</h1>
         <h2>Full Stack Developer</h2>
@@ -142,13 +203,11 @@
       <p>This is a short description of my portfolio and what you’ll find here.</p>
     </div>
     </section> -->
-  </main>
+      </main>
 
-  <footer>
-    <p>
-      © 2025 Ofir Semel. All rights reserved.
-    </p>
-  </footer>
-</div>
-</body>
+      <footer>
+        <p>© 2025 Ofir Semel. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -6,32 +6,45 @@
     <title>About Me</title>
     <link rel="stylesheet" href="assets/style/global.css" />
     <link rel="stylesheet" href="assets/style/about.css" />
+    <link rel="stylesheet" href="assets/style/home.css" />
+
     <script defer src="services/home.js"></script>
     <script defer src="services/global.js"></script>
     <script defer src="services/about.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   </head>
+
   <body>
     <div class="wrapper">
+    
       <header id="header">
         <div class="container">
-          <nav>
+          <nav class="main-nav">
             <img
               src="assets/imgs/logo.png"
-              alt="ofir semel's logo"
+              alt="Ofir Semel's Logo"
               class="logo"
             />
-            <ul class="nav-links active">
+
+            
+            <ul class="nav-links" id="navLinks">
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="skills.html">Skills</a></li>
-              <li><a href="project-calculator.html">Project Calculator</a></li>
+              <li><a href="project-calculator.html" id="projCal">Project Calculator</a></li>
             </ul>
+
+           
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </nav>
         </div>
-
-        <nav id="nav">
-          <div class="hamburger" onclick="toggleMenu()"></div>
-        </nav>
       </header>
 
       <main>

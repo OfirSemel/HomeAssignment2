@@ -1,8 +1,12 @@
+// function toggleMenu() {
+//     const navLinks = document.querySelector('#nav');
+//     navLinks.classList.toggle('open');
+//   }
 function toggleMenu() {
-    const navLinks = document.querySelector('#nav');
-    navLinks.classList.toggle('open');
-  }
-  
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('open');
+}
+
 
  
 

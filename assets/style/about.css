@@ -24,7 +24,7 @@ body{
   
   .about-col-1 img {
     height: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 70%;
     height: auto;
     border-radius: 15px;
@@ -148,4 +148,85 @@ body{
     margin-top: 20px;
     line-height: 1.8;
   }
+
   
+
+
+  
+/* Responsive */
+/* @media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-column {
+    max-width: 90%;
+    text-align: center;
+  }
+} */
+@media (max-width: 767px) {
+  
+  .row {
+    flex-direction: column;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0 20px;
+    
+  }
+
+  .about-col-2 p {
+    margin: 30px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+    
+  }
+
+  .about-col-2 h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hofy-gallery {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hofy-card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .hofy-card h3 {
+    font-size: 30px;
+  }
+
+  .hofy-card p {
+    font-size: 20px;
+  }
+
+  .hofy-card img {
+    height: auto;
+  }
+}

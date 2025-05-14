@@ -14,23 +14,32 @@
 </head>
 <body>
   <div class="wrapper">
-  <header id="header">
-    <div class="container">
-      <nav>
-        <img src="assets/imgs/logo.png" alt="ofir semel's logo" class="logo" />
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="project-calculator.html">Project Calculator</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header id="header">
+      <div class="container">
+        <nav class="main-nav">
+          <img
+            src="assets/imgs/logo.png"
+            alt="Ofir Semel's Logo"
+            class="logo"
+          />
 
-  <nav id="nav">
-    <div class="hamburger" onclick="toggleMenu()"></div>      
-  </nav>
-</header>
+          
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project-calculator.html" id="projCal">Project Calculator</a></li>
+          </ul>
+
+         
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
   <main>
     <div class="calculator-container">
       <div class="form-section">
