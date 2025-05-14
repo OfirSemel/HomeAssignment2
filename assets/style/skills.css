@@ -26,7 +26,6 @@
     padding: 100px;
     border-radius: 15px;
     font-size: 60px;
-
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     color: #f6e5e5;
     transition: background 0.5s, transform 0.3s, color 0.3s;
@@ -131,7 +130,6 @@
   }
 
   .skills-list div {
-    padding: 100px;
     font-size: 60px;
   }
 
