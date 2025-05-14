@@ -21,84 +21,133 @@
     margin: 0 auto;
   }
   
-  /* .skills-list div {
-    background: #1a1a1a;
-    padding: 100px;
-    border-radius: 15px;
-    font-size: 60px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-    transition: background 0.5s, transform 0.3s;
-    color: #f6e5e5;; 
-  }
-  
-  .skills-list div:hover {
-    background: #ff66c4; 
-    transform: translateY(-10px);
-    color: #1a1a1a; 
-  }
-   */
-  
    .skills-list div {
     background: #1a1a1a;
     padding: 100px;
     border-radius: 15px;
     font-size: 60px;
+
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     color: #f6e5e5;
     transition: background 0.5s, transform 0.3s, color 0.3s;
     cursor: pointer;
-  
-    /* אפקט hover כברירת מחדל לכל המכשירים */
     background: #1a1a1a;
   }
-  
-  .skills-list div:hover {
-    background: #ff66c4;
-    color: #1a1a1a;
-    transform: translateY(-10px);
+
+  .skills-item{
+   padding: 60px;
   }
   
+
+  .skills-list div:hover,
+.skills-list div.hovered {
+  background: #ff66c4;
+  color: #1a1a1a;
+  transform: translateY(-10px);
+}
+
   .skills-list h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #f6e5e5;;
     margin-bottom: 20px;
   }
   
   .skills-list p {
-    font-size: 25px;
+    font-size: 30px;
     color: #f6e5e5;;
     line-height: 1.6;
     
   }
-  
-  .skills-list div:hover  {
-    color: #ff66c4;
-    transform: translateY(-10px);
+
+
+
+@media (max-width: 767px) {
+  .sub-title {
+    font-size: 40px;
   }
 
-  @media (max-width: 768px) {
-    .sub-title {
-      font-size: 60px;
-    }
-  
-    .skills-list div {
-      padding: 30px;
-      font-size: 24px;
-    }
-  
-    .skills-list h2 {
-      font-size: 40px;
-    }
-  
-    .skills-list p {
-      font-size: 28px;
-    }
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
-  
-  @media (hover: hover) {
-    .skills-list div:hover {
-      background: #ff66c4;
-      color: #1a1a1a;
-      transform: translateY(-10px);
-    }
+
+  .skills-list div {
+    padding: 30px;
+    font-size: 30px;
   }
+
+  .skills-list h2 {
+    font-size: 28px;
+  }
+
+  .skills-list p {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 768px)  {
+  .sub-title {
+    font-size: 50px;
+  }
+
+  .skills-list div {
+    padding: 60px;
+    font-size: 40px;
+  }
+
+  .skills-list h2 {
+    font-size: 32px;
+  }
+
+  .skills-list p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-title {
+    font-size: 55px;
+  }
+
+  .skills-list div {
+    padding: 70px 60px;
+    font-size: 50px;
+  }
+
+  .skills-list h2 {
+    font-size: 36px;
+  }
+
+  .skills-list p {
+    font-size: 24px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .sub-title {
+    font-size: 60px;
+  }
+
+  .skills-list div {
+    padding: 100px;
+    font-size: 60px;
+  }
+
+  .skills-list h2 {
+    font-size: 45px;
+  }
+
+  .skills-list p {
+    font-size: 35px;
+  }
+}
+
+@media (hover: hover) {
+  .skills-list div:hover {
+    background: #ff66c4;
+    color: #1a1a1a;
+    transform: translateY(-10px);
+  }
+} 

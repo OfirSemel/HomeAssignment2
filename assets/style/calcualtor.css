@@ -1,93 +1,191 @@
+body {
+  background-color: #0d0d0d;
+  color: #f6e5e5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-  body {
-    background-color: #0d0d0d;
-    color: #f6e5e5;;
-    font-family: Arial, sans-serif;
-    padding: 50px;
-  }
+.calculator-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
+.form-section, .price-table {
+  flex: 1;
+  min-width: 280px;
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-section h1 {
+  font-size: 45px;
+  color: #ff66c4;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label, select, input, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background-color: #ff66c4;
+  color: #f6e5e5;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e055b2;
+}
+
+.result {
+  font-size: 26px;
+  color: #ff66c4;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 24px;
+}
+
+.price-table th, .price-table td {
+  padding: 15px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.price-table th {
+  background-color: #333;
+}
+
+
+@media (max-width: 767px) {
   .calculator-container {
-    margin-top: 400px;
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    
-    flex-wrap: wrap;
   }
 
-  .form-section {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    background-color: #1e1e1e;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  .form-section, .price-table {
+    padding: 20px;
+    max-width: 100%;
   }
 
   .form-section h1 {
-    font-size: 45px;
-    color: #ff66c4;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  label, select, input, button {
-    display: block;
-    width: 100%;
-    margin-bottom: 25px;
     font-size: 30px;
   }
 
-  input, select {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
+  label, select, input, button {
+    font-size: 18px;
   }
 
-  button {
-    background-color: #ff66c4;
-    color: #f6e5e5;;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  .price-table table {
+    font-size: 18px;
   }
 
-  button:hover {
-    background-color: #e055b2;
+  .result {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 768px)  {
+  .calculator-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section, .price-table {
+    max-width: 90%;
+  }
+
+  .form-section h1 {
+    font-size: 35px;
+  }
+
+  label, select, input, button {
+    font-size: 20px;
+  }
+
+  .price-table table {
+    font-size: 20px;
+  }
+
+  .result {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-section, .price-table {
+    padding: 40px;
+  }
+
+  .form-section h1 {
+    font-size: 40px;
+  }
+
+  label, select, input, button {
+    font-size: 22px;
+  }
+
+  .price-table table {
+    font-size: 22px;
+  }
+
+  .result {
+    font-size: 24px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .calculator-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .form-section, .price-table {
+    max-width: 600px;
+    padding: 60px;
+  }
+
+  .form-section h1 {
+    font-size: 55px;
+  }
+
+  label, select, input, button {
+    font-size: 28px;
+  }
+
+  .price-table table {
+    font-size: 28px;
   }
 
   .result {
     font-size: 30px;
-    color: #ff66c4;
-    margin-top: 20px;
-    text-align: center;
   }
-
-  .price-table {
-    flex: 1;
-    min-width: 280px;
-    max-width: 500px;
-    background-color: #1e1e1e;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  }
-
-  .price-table table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 35px;
-  }
-
-  .price-table th, .price-table td {
-    padding: 15px;
-    border: 1px solid #333;
-    text-align: left;
-  }
-
-  .price-table th {
-    background-color: #333;
-  }
+}
