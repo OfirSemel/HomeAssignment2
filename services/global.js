@@ -1,7 +1,4 @@
-// function toggleMenu() {
-//     const navLinks = document.querySelector('#nav');
-//     navLinks.classList.toggle('open');
-//   }
+
 function toggleMenu() {
   const navLinks = document.getElementById('navLinks');
   navLinks.classList.toggle('open');
@@ -41,3 +38,20 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+
+  // const toggleBtn = document.getElementById('toggle-theme');
+  // const icon = document.getElementById('theme-icon');
+
+  // toggleBtn.addEventListener('click', () => {
+  //   const body = document.body;
+
+  //   // אם יש dark-mode — נסיר, אחרת נוסיף
+  //   body.classList.toggle('dark-mode');
+
+  //   // שינוי האייקון בהתאם למצב
+  //   if (body.classList.contains('dark-mode')) {
+  //     icon.textContent = '🌙'; // שמש = מצב כהה מופעל
+  //   } else {
+  //     icon.textContent = '🌞'; // ירח = מצב בהיר
+  //   }
+  // });

@@ -5,6 +5,17 @@ body {
 
 }
 
+/* 
+body {
+  background-color: #fff; 
+  color: #111;
+}
+
+body.dark-mode {
+  background-color: #0d0d0d; 
+  color: #f6e5e5;
+} */
+
 .hero {
   padding: 80px 20px;
 }

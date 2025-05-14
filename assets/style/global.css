@@ -16,7 +16,6 @@ body{
     padding: 0;
     overflow-x: hidden; 
   }
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -26,7 +25,6 @@ body{
     flex: 1;
   }
 
- 
 
 header {
     position: fixed;
@@ -219,3 +217,22 @@ nav ul li a{
     }
   }
   
+
+ /* מצב כהה */
+body.dark-mode {
+  background-color: #0d0d0d;
+  color: #f6e5e5;
+}
+
+/* כפתור נראות */
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  color: inherit;
+}

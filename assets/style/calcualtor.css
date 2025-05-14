@@ -1,13 +1,16 @@
+/* 
 body {
-  background-color: #0d0d0d;
-  color: #f6e5e5;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+  background-color: #fff; 
+  color: #111;
 }
 
+body.dark-mode {
+  background-color: #0d0d0d;
+  color: #f6e5e5;
+} */
+
 .calculator-container {
-  margin-top: 150px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -90,6 +93,7 @@ button:hover {
 
   .form-section, .price-table {
     padding: 20px;
+    margin-bottom: 40px;
     max-width: 100%;
   }
 
@@ -119,6 +123,7 @@ button:hover {
 
   .form-section, .price-table {
     max-width: 90%;
+    margin-bottom: 40px;
   }
 
   .form-section h1 {
@@ -141,6 +146,7 @@ button:hover {
 @media (min-width: 992px) {
   .form-section, .price-table {
     padding: 40px;
+    margin-bottom: 40px;
   }
 
   .form-section h1 {

@@ -1,3 +1,14 @@
+/* 
+body {
+  background-color: #fff; 
+  color: #111;
+}
+
+body.dark-mode {
+  background-color: #0d0d0d; 
+  color: #f6e5e5;
+} */
+
 
 #skills {
     padding: 100px 0;
